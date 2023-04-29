@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3510784503331876629}
   - component: {fileID: 1111035442318312934}
   - component: {fileID: 5340917512004073641}
+  - component: {fileID: 2070256175725806983}
   m_Layer: 0
   m_Name: PlayerGraphic
   m_TagString: Untagged
@@ -128,8 +129,29 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.18, y: 0.37, z: 0.05}
+  m_Center: {x: 0, y: -0.12, z: 0}
+--- !u!95 &2070256175725806983
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4077576456215490056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4403c5b7dd613ef47bd8d6feee02153b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5750264302001740878
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +163,7 @@ GameObject:
   - component: {fileID: 1931906373991997452}
   - component: {fileID: 7955915920746404245}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,6 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   maxSpeed: 100
+  baseObstacle: {fileID: 9197451557834828220, guid: 8965dd5589e280d4d9c7bd2a826d7e56, type: 3}
 --- !u!1 &7080437885096710223
 GameObject:
   m_ObjectHideFlags: 0

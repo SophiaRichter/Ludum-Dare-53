@@ -5,7 +5,10 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public float speed = 0f;
-    public float maxSpeed = 100f; 
+    public float maxSpeed = 120f;
+
+    public GameObject baseObstacle;
+    private GameObject lastObject;
 
     void Start()
     {
@@ -21,5 +24,11 @@ public class CameraMovement : MonoBehaviour
             speed += verticalInput * 10 * Time.deltaTime;
         }
         transform.position += new Vector3(0, 0, 1) * speed * Time.deltaTime;
+
+        if (transform.position.z %100  == 0)
+        { 
+            
+        }
+
     }
 }
