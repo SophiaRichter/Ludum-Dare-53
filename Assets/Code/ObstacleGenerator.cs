@@ -13,13 +13,10 @@ public class ObstacleGenerator : MonoBehaviour
         foreach (GameObject g in obstacleMarkers)
         {
             int randIndex = Random.Range(0, obstacles.Length);
-            Instantiate(obstacles[randIndex], g.transform.position, Quaternion.identity, gameObject.transform);
+            Quaternion rot = Quaternion.Euler(0, 90f * Random.Range(1, 4), 0);
+            Instantiate(obstacles[randIndex], g.transform.position, rot, gameObject.transform);
             g.tag = "Marked";
         }
     }
 
-    void Update()
-    {
-        
-    }
 }

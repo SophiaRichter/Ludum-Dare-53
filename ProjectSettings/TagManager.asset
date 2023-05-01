@@ -5,10 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Rail
   - ObstacleMarker
   - Marked
   - Obstacle
+  - Enemy
+  - Castle
+  - Item
+  - ItemMarker
+  - UI
   layers:
   - Default
   - TransparentFX
